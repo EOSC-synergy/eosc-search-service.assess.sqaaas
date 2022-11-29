@@ -1,0 +1,66 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.7
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/cyfronet-fid/eosc-search-service:
+      branch: development
+      repo: https://github.com/cyfronet-fid/eosc-search-service
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/cyfronet-fid/eosc-search-service git:
+        commands:
+        - /usr/bin/env sh .sqa/script.scaly-razzmatazz-capuchin.sh
+        container: qc.acc_slaphappy-emerald-jaguar
+  QC.Doc:
+    repos:
+      github.com/cyfronet-fid/eosc-search-service find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.gimpy-brown-elephant.sh
+        container: qc.doc_skinny-aquamarine-uguisu
+      github.com/cyfronet-fid/eosc-search-service git:
+        commands:
+        - /usr/bin/env sh .sqa/script.lovely-cardinal-gharial.sh
+        container: qc.doc_flimsy-firebrick-audemer
+      github.com/cyfronet-fid/eosc-search-service markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.clammy-gold-eagle.sh
+        container: qc.doc_gimpy-indigo-bear
+  QC.Lic:
+    repos:
+      github.com/cyfronet-fid/eosc-search-service licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.clammy-plum-cockroach.sh
+        container: qc.lic_thirsty-lilac-fly
+  QC.Sec:
+    repos:
+      github.com/cyfronet-fid/eosc-search-service bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.randy-cerulean-hound.sh
+        container: qc.sec_thirsty-amethyst-burmese
+  QC.Sty:
+    repos:
+      github.com/cyfronet-fid/eosc-search-service flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.freaky-chestnut-malamute.sh
+        container: qc.sty_skinny-lavender-armadillo
+      github.com/cyfronet-fid/eosc-search-service hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.paltry-burgundy-reindeer.sh
+        container: qc.sty_nerdy-gold-cassowary
+      github.com/cyfronet-fid/eosc-search-service jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.homey-amber-moose.sh
+        container: qc.sty_queasy-pear-dormouse
+  QC.Ver:
+    repos:
+      github.com/cyfronet-fid/eosc-search-service get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.paltry-wheat-duck.sh
+        container: qc.ver_snoopy-carmine-dunker
+timeout: 1800
