@@ -6,7 +6,7 @@ config:
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/cyfronet-fid/eosc-search-service:
       branch: 1628-getting-golden-SQA-badge
-      repo: https://github.com/cyfronet-fid/eosc-search-service/
+      repo: https://github.com/cyfronet-fid/eosc-search-service
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/cyfronet-fid/eosc-search-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-lavender-rat.sh
-        container: qc.acc_gloppy-firebrick-ray
+        - /usr/bin/env sh .sqa/script.crabby-khaki-bear.sh
+        container: qc.acc_ugly-magenta-antelope
   QC.Doc:
     repos:
       github.com/cyfronet-fid/eosc-search-service find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-cobalt-badger.sh
-        container: qc.doc_goopy-seashell-mongrel
+        - /usr/bin/env sh .sqa/script.beady-carmine-sheepdog.sh
+        container: qc.doc_leaky-lilac-newfoundland
       github.com/cyfronet-fid/eosc-search-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-flax-maltese.sh
-        container: qc.doc_shaggy-bistre-shark
+        - /usr/bin/env sh .sqa/script.chummy-denim-akbash.sh
+        container: qc.doc_flabby-celadon-buffalo
       github.com/cyfronet-fid/eosc-search-service markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-russet-tarsier.sh
-        container: qc.doc_blurry-goldenrod-newt
+        - /usr/bin/env sh .sqa/script.craggy-linen-mau.sh
+        container: qc.doc_sloppy-pear-spitz
   QC.Lic:
     repos:
       github.com/cyfronet-fid/eosc-search-service licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-corn-ragdoll.sh
-        container: qc.lic_woolly-sapphire-foxhound
+        - /usr/bin/env sh .sqa/script.beady-pumpkin-angelfish.sh
+        container: qc.lic_goopy-linen-buffalo
   QC.Met:
     repos:
       github.com/cyfronet-fid/eosc-search-service cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-cinnabar-chimpanzee.sh
-        container: qc.met_thirsty-cobalt-jellyfish
+        - /usr/bin/env sh .sqa/script.wiggy-olivine-turkey.sh
+        container: qc.met_sunny-scarlet-dragon
   QC.Sec:
     repos:
       github.com/cyfronet-fid/eosc-search-service bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-brown-gorilla.sh
-        container: qc.sec_skanky-denim-hummingbird
+        - /usr/bin/env sh .sqa/script.sunny-plum-frise.sh
+        container: qc.sec_thirsty-lemon-cattle
   QC.Sty:
     repos:
       github.com/cyfronet-fid/eosc-search-service flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-ochre-leopard.sh
-        container: qc.sty_sloppy-apricot-hyena
+        - /usr/bin/env sh .sqa/script.boozy-buff-spaniel.sh
+        container: qc.sty_snippy-scarlet-drever
       github.com/cyfronet-fid/eosc-search-service hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-salmon-ostrich.sh
-        container: qc.sty_tacky-harlequin-tang
+        - /usr/bin/env sh .sqa/script.scaly-bronze-ibis.sh
+        container: qc.sty_skanky-beige-greyhound
       github.com/cyfronet-fid/eosc-search-service jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-tan-mouse.sh
-        container: qc.sty_geeky-cyan-audemer
+        - /usr/bin/env sh .sqa/script.shaky-buff-beagle.sh
+        container: qc.sty_geeky-chartreuse-squid
   QC.Uni:
     repos:
       github.com/cyfronet-fid/eosc-search-service pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-tan-eel.sh
-        container: qc.uni_chummy-brass-mongrel
+        - /usr/bin/env sh .sqa/script.flimsy-viridian-birman.sh
+        container: qc.uni_snippy-alizarin-lobster
   QC.Ver:
     repos:
       github.com/cyfronet-fid/eosc-search-service get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-purple-skunk.sh
-        container: qc.ver_tacky-tan-squid
+        - /usr/bin/env sh .sqa/script.seedy-periwinkle-mole.sh
+        container: qc.ver_sickly-bistre-coyote
 timeout: 5400
