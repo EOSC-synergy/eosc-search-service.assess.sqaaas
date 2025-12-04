@@ -6,7 +6,7 @@ config:
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/cyfronet-fid/eosc-search-service:
       branch: 1628-getting-golden-SQA-badge-v3
-      repo: https://github.com/cyfronet-fid/eosc-search-service
+      repo: https://github.com/cyfronet-fid/eosc-search-service/
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/cyfronet-fid/eosc-search-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-cyan-spaniel.sh
-        container: qc.acc_hilly-taupe-setter
+        - /usr/bin/env sh .sqa/script.gummy-scarlet-fossa.sh
+        container: qc.acc_zippy-sepia-dane
   QC.Doc:
     repos:
       github.com/cyfronet-fid/eosc-search-service find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-linen-squirt.sh
-        container: qc.doc_paltry-rose-flamingo
+        - /usr/bin/env sh .sqa/script.tasty-rust-russel.sh
+        container: qc.doc_scanty-pear-dodo
       github.com/cyfronet-fid/eosc-search-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-malachite-dodo.sh
-        container: qc.doc_droopy-flax-emu
+        - /usr/bin/env sh .sqa/script.lanky-scarlet-weasel.sh
+        container: qc.doc_chummy-sapphire-tarsier
       github.com/cyfronet-fid/eosc-search-service markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-olivine-newt.sh
-        container: qc.doc_messy-plum-neanderthal
+        - /usr/bin/env sh .sqa/script.wiggy-viridian-bear.sh
+        container: qc.doc_slimy-taupe-wrasse
   QC.Lic:
     repos:
       github.com/cyfronet-fid/eosc-search-service licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-purple-guppy.sh
-        container: qc.lic_frumpy-peach-wrasse
+        - /usr/bin/env sh .sqa/script.snoopy-lavender-squirrel.sh
+        container: qc.lic_pokey-purple-havanese
   QC.Met:
     repos:
       github.com/cyfronet-fid/eosc-search-service cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-corn-mammoth.sh
-        container: qc.met_stealthy-taupe-swan
+        - /usr/bin/env sh .sqa/script.snippy-eggplant-wolf.sh
+        container: qc.met_surly-mauve-sparrow
   QC.Sec:
     repos:
       github.com/cyfronet-fid/eosc-search-service bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-dandelion-dormouse.sh
-        container: qc.sec_queasy-silver-dhole
+        - /usr/bin/env sh .sqa/script.thirsty-tan-falcon.sh
+        container: qc.sec_flimsy-lilac-tarsier
   QC.Sty:
     repos:
       github.com/cyfronet-fid/eosc-search-service flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-persimmon-clam.sh
-        container: qc.sty_trippy-auburn-bullfrog
+        - /usr/bin/env sh .sqa/script.skimpy-pumpkin-dunker.sh
+        container: qc.sty_lovely-cyan-grouse
       github.com/cyfronet-fid/eosc-search-service hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-cinnamon-penguin.sh
-        container: qc.sty_smelly-pear-camel
+        - /usr/bin/env sh .sqa/script.crappy-aqua-angora.sh
+        container: qc.sty_smelly-chocolate-butterfly
       github.com/cyfronet-fid/eosc-search-service jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-viridian-tang.sh
-        container: qc.sty_surly-emerald-leopard
+        - /usr/bin/env sh .sqa/script.smelly-cinnabar-malamute.sh
+        container: qc.sty_sleazy-seashell-falcon
   QC.Uni:
     repos:
       github.com/cyfronet-fid/eosc-search-service pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-cobalt-swan.sh
-        container: qc.uni_whiny-linen-dog
+        - /usr/bin/env sh .sqa/script.skimpy-peach-uguisu.sh
+        container: qc.uni_homey-yellow-barracuda
   QC.Ver:
     repos:
       github.com/cyfronet-fid/eosc-search-service get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-periwinkle-orangutan.sh
-        container: qc.ver_shaggy-cerise-woodpecker
+        - /usr/bin/env sh .sqa/script.shaky-xanthic-birman.sh
+        container: qc.ver_homey-platinum-fly
 timeout: 5400
