@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/cyfronet-fid/eosc-search-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-amber-cassowary.sh
-        container: qc.acc_cheeky-lime-wombat
+        - /usr/bin/env sh .sqa/script.pretty-alizarin-argentino.sh
+        container: qc.acc_chewy-emerald-goose
   QC.Doc:
     repos:
       github.com/cyfronet-fid/eosc-search-service find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-champagne-tiger.sh
-        container: qc.doc_sleepy-lilac-wolfhound
+        - /usr/bin/env sh .sqa/script.lousy-thistle-zebu.sh
+        container: qc.doc_cozy-cerulean-moorhen
       github.com/cyfronet-fid/eosc-search-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-tangerine-schnauzer.sh
-        container: qc.doc_surly-emerald-lionfish
+        - /usr/bin/env sh .sqa/script.homely-buff-panda.sh
+        container: qc.doc_sloppy-rose-opossum
       github.com/cyfronet-fid/eosc-search-service markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-tan-corgi.sh
-        container: qc.doc_baggy-brown-quokka
+        - /usr/bin/env sh .sqa/script.lanky-rust-squid.sh
+        container: qc.doc_frumpy-smalt-bison
   QC.Lic:
     repos:
       github.com/cyfronet-fid/eosc-search-service licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-celadon-hornet.sh
-        container: qc.lic_bluesy-cobalt-labradoodle
+        - /usr/bin/env sh .sqa/script.gamy-beige-fossa.sh
+        container: qc.lic_clammy-saffron-flounder
   QC.Sec:
     repos:
       github.com/cyfronet-fid/eosc-search-service bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-sapphire-dolphin.sh
-        container: qc.sec_nippy-seashell-scorpion
+        - /usr/bin/env sh .sqa/script.blurry-periwinkle-stoat.sh
+        container: qc.sec_wimpy-razzmatazz-flounder
   QC.Sty:
     repos:
       github.com/cyfronet-fid/eosc-search-service flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-xanthic-termite.sh
-        container: qc.sty_surly-wisteria-catfish
+        - /usr/bin/env sh .sqa/script.tacky-violet-llama.sh
+        container: qc.sty_gimpy-magenta-mandrill
       github.com/cyfronet-fid/eosc-search-service hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-mauve-chow.sh
-        container: qc.sty_snappy-corn-skunk
+        - /usr/bin/env sh .sqa/script.skinny-champagne-skunk.sh
+        container: qc.sty_crappy-indigo-markhor
       github.com/cyfronet-fid/eosc-search-service jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-fuchsia-lizard.sh
-        container: qc.sty_jumpy-pink-crane
+        - /usr/bin/env sh .sqa/script.beady-denim-cat.sh
+        container: qc.sty_breezy-pink-worm
   QC.Uni:
     repos:
       github.com/cyfronet-fid/eosc-search-service pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-turquoise-serval.sh
-        container: qc.uni_fuzzy-amaranth-chimpanzee
+        - /usr/bin/env sh .sqa/script.cheeky-apricot-mau.sh
+        container: qc.uni_baggy-lilac-neanderthal
   QC.Ver:
     repos:
       github.com/cyfronet-fid/eosc-search-service get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-orange-setter.sh
-        container: qc.ver_flabby-thistle-iguana
+        - /usr/bin/env sh .sqa/script.queasy-cyan-dogfish.sh
+        container: qc.ver_baggy-chocolate-butterfly
 timeout: 5400
