@@ -6,7 +6,7 @@ config:
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/cyfronet-fid/eosc-search-service:
       branch: 1628-getting-golden-SQA-badge-v3
-      repo: https://github.com/cyfronet-fid/eosc-search-service
+      repo: https://github.com/cyfronet-fid/eosc-search-service/
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/cyfronet-fid/eosc-search-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-pumpkin-eel.sh
-        container: qc.acc_woozy-ecru-dachshund
+        - /usr/bin/env sh .sqa/script.stuffy-coral-pig.sh
+        container: qc.acc_sloppy-dandelion-booby
   QC.Doc:
     repos:
       github.com/cyfronet-fid/eosc-search-service find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-cream-bandicoot.sh
-        container: qc.doc_flabby-cream-ferret
+        - /usr/bin/env sh .sqa/script.sleepy-cinnamon-spoonbill.sh
+        container: qc.doc_thirsty-fuchsia-ragdoll
       github.com/cyfronet-fid/eosc-search-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-sangria-barnacle.sh
-        container: qc.doc_freaky-azure-quokka
+        - /usr/bin/env sh .sqa/script.slaphappy-lemon-spaniel.sh
+        container: qc.doc_sickly-xanthic-impala
       github.com/cyfronet-fid/eosc-search-service markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-black-spoonbill.sh
-        container: qc.doc_lanky-smalt-bee
+        - /usr/bin/env sh .sqa/script.nippy-bistre-gorilla.sh
+        container: qc.doc_nerdy-harlequin-opossum
   QC.Lic:
     repos:
       github.com/cyfronet-fid/eosc-search-service licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-smalt-gibbon.sh
-        container: qc.lic_ugly-crimson-toad
+        - /usr/bin/env sh .sqa/script.boozy-celadon-angelfish.sh
+        container: qc.lic_droopy-violet-fly
   QC.Met:
     repos:
       github.com/cyfronet-fid/eosc-search-service cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-lime-beagle.sh
-        container: qc.met_stinky-lime-stoat
+        - /usr/bin/env sh .sqa/script.lanky-bistre-bloodhound.sh
+        container: qc.met_paltry-carmine-bordeaux
   QC.Sec:
     repos:
       github.com/cyfronet-fid/eosc-search-service bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-aqua-toad.sh
-        container: qc.sec_dorky-mauve-chamois
+        - /usr/bin/env sh .sqa/script.pokey-cinnabar-giraffe.sh
+        container: qc.sec_goopy-buff-markhor
   QC.Sty:
     repos:
       github.com/cyfronet-fid/eosc-search-service flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-eggplant-tiger.sh
-        container: qc.sty_lumpy-black-akita
+        - /usr/bin/env sh .sqa/script.beady-sepia-quail.sh
+        container: qc.sty_ugly-blue-neanderthal
       github.com/cyfronet-fid/eosc-search-service hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-fuchsia-vole.sh
-        container: qc.sty_flaky-thistle-devil
+        - /usr/bin/env sh .sqa/script.slimy-ivory-ant.sh
+        container: qc.sty_skanky-zucchini-fousek
       github.com/cyfronet-fid/eosc-search-service jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-periwinkle-frog.sh
-        container: qc.sty_gummy-firebrick-sloth
+        - /usr/bin/env sh .sqa/script.squeaky-lavender-okapi.sh
+        container: qc.sty_crabby-cobalt-kudu
   QC.Uni:
     repos:
       github.com/cyfronet-fid/eosc-search-service pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-purple-zebra.sh
-        container: qc.uni_snippy-eggplant-corgi
+        - /usr/bin/env sh .sqa/script.squeaky-aqua-cassowary.sh
+        container: qc.uni_sleazy-firebrick-jaguar
   QC.Ver:
     repos:
       github.com/cyfronet-fid/eosc-search-service get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-gamboge-ibis.sh
-        container: qc.ver_scummy-champagne-blue
+        - /usr/bin/env sh .sqa/script.scaly-corn-burmese.sh
+        container: qc.ver_messy-bistre-tiger
 timeout: 5400
