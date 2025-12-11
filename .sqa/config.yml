@@ -6,7 +6,7 @@ config:
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/cyfronet-fid/eosc-search-service:
       branch: 1628-getting-golden-SQA-badge-v3
-      repo: https://github.com/cyfronet-fid/eosc-search-service/
+      repo: https://github.com/cyfronet-fid/eosc-search-service
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/cyfronet-fid/eosc-search-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-pumpkin-urchin.sh
-        container: qc.acc_hasty-pink-dragon
+        - /usr/bin/env sh .sqa/script.cranky-viridian-grouse.sh
+        container: qc.acc_crabby-purple-cattle
   QC.Doc:
     repos:
       github.com/cyfronet-fid/eosc-search-service find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-scarlet-blue.sh
-        container: qc.doc_nippy-celadon-liger
+        - /usr/bin/env sh .sqa/script.crabby-orange-uakari.sh
+        container: qc.doc_pretty-aqua-newfoundland
       github.com/cyfronet-fid/eosc-search-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-smalt-ibis.sh
-        container: qc.doc_shabby-tan-labradoodle
+        - /usr/bin/env sh .sqa/script.cozy-brown-spoonbill.sh
+        container: qc.doc_shaky-ecru-dormouse
       github.com/cyfronet-fid/eosc-search-service markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-beige-barnacle.sh
-        container: qc.doc_sleepy-sepia-mole
+        - /usr/bin/env sh .sqa/script.blurry-cardinal-mau.sh
+        container: qc.doc_tacky-burgundy-vole
   QC.Lic:
     repos:
       github.com/cyfronet-fid/eosc-search-service licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-violet-wolverine.sh
-        container: qc.lic_hasty-mustard-wolf
+        - /usr/bin/env sh .sqa/script.crappy-blue-fly.sh
+        container: qc.lic_squeaky-lime-dormouse
   QC.Met:
     repos:
       github.com/cyfronet-fid/eosc-search-service cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-salmon-ferret.sh
-        container: qc.met_clammy-wisteria-gibbon
+        - /usr/bin/env sh .sqa/script.frumpy-taupe-coral.sh
+        container: qc.met_zippy-champagne-chinchilla
   QC.Sec:
     repos:
       github.com/cyfronet-fid/eosc-search-service bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-pumpkin-magpie.sh
-        container: qc.sec_thirsty-chestnut-chinchilla
+        - /usr/bin/env sh .sqa/script.stinky-beige-fox.sh
+        container: qc.sec_shaky-blue-toucan
   QC.Sty:
     repos:
       github.com/cyfronet-fid/eosc-search-service flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-bronze-coyote.sh
-        container: qc.sty_ugly-firebrick-sheepdog
+        - /usr/bin/env sh .sqa/script.woozy-fuchsia-cattle.sh
+        container: qc.sty_baggy-flax-dollar
       github.com/cyfronet-fid/eosc-search-service hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-chestnut-mayfly.sh
-        container: qc.sty_shabby-burgundy-uguisu
+        - /usr/bin/env sh .sqa/script.shabby-persimmon-audemer.sh
+        container: qc.sty_pasty-taupe-tiger
       github.com/cyfronet-fid/eosc-search-service jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-viridian-goose.sh
-        container: qc.sty_nerdy-denim-lizard
+        - /usr/bin/env sh .sqa/script.cloudy-silver-audemer.sh
+        container: qc.sty_flaky-bistre-cockroach
   QC.Uni:
     repos:
       github.com/cyfronet-fid/eosc-search-service pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-ecru-reindeer.sh
-        container: qc.uni_homey-blue-yak
+        - /usr/bin/env sh .sqa/script.boozy-tomato-tang.sh
+        container: qc.uni_sickly-chocolate-frog
   QC.Ver:
     repos:
       github.com/cyfronet-fid/eosc-search-service get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-rose-yak.sh
-        container: qc.ver_lousy-ochre-pinscher
+        - /usr/bin/env sh .sqa/script.snazzy-orchid-booby.sh
+        container: qc.ver_scummy-white-barracuda
 timeout: 5400
