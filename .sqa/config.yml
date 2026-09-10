@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/pynblint_fix
+      branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/cyfronet-fid/eosc-search-service:
       branch: master
@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/cyfronet-fid/eosc-search-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-scarlet-caterpillar.sh
-        container: qc.acc_lousy-saffron-bullfrog
+        - /usr/bin/env sh .sqa/script.strawberry_studious_gorilla.sh
+        container: qc.acc_taupe_wondrous_kirin
   QC.Doc:
     repos:
       github.com/cyfronet-fid/eosc-search-service find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-copper-tortoise.sh
-        container: qc.doc_chummy-red-wrasse
+        - /usr/bin/env sh .sqa/script.gold_realistic_kiwi.sh
+        container: qc.doc_viridian_analytical_newt
       github.com/cyfronet-fid/eosc-search-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-peach-guppy.sh
-        container: qc.doc_pokey-crimson-orangutan
+        - /usr/bin/env sh .sqa/script.isabelline_helpful_dugong.sh
+        container: qc.doc_cherry_understanding_kirin
       github.com/cyfronet-fid/eosc-search-service markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-xanthic-avocet.sh
-        container: qc.doc_woozy-cinnamon-wrasse
+        - /usr/bin/env sh .sqa/script.orange_graceful_quokka.sh
+        container: qc.doc_sunset_sympathetic_hummingbird
   QC.Lic:
     repos:
       github.com/cyfronet-fid/eosc-search-service licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-xanthic-flamingo.sh
-        container: qc.lic_shaggy-pink-emu
+        - /usr/bin/env sh .sqa/script.peony_agile_eel.sh
+        container: qc.lic_vermilion_meticulous_mandrill
   QC.Met:
     repos:
       github.com/cyfronet-fid/eosc-search-service cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-taupe-earwig.sh
-        container: qc.met_scummy-auburn-moth
+        - /usr/bin/env sh .sqa/script.zinnia_content_wolverine.sh
+        container: qc.met_steel_shrewd_octopus
   QC.Sec:
     repos:
       github.com/cyfronet-fid/eosc-search-service bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-cardinal-ray.sh
-        container: qc.sec_silly-flax-cattle
+        - /usr/bin/env sh .sqa/script.pumpkin_persistent_beaver.sh
+        container: qc.sec_alabaster_rustic_tarantula
   QC.Sty:
     repos:
       github.com/cyfronet-fid/eosc-search-service flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-razzmatazz-nightingale.sh
-        container: qc.sty_grumpy-red-buzzard
+        - /usr/bin/env sh .sqa/script.nutmeg_peppy_albatross.sh
+        container: qc.sty_isabelline_nervous_buffalo
       github.com/cyfronet-fid/eosc-search-service hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-crimson-dogfish.sh
-        container: qc.sty_silly-auburn-cuttlefish
+        - /usr/bin/env sh .sqa/script.dusk_perky_orangutan.sh
+        container: qc.sty_burgundy_clever_starfish
       github.com/cyfronet-fid/eosc-search-service jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-azure-deer.sh
-        container: qc.sty_foggy-olive-insect
+        - /usr/bin/env sh .sqa/script.peony_humble_tiger.sh
+        container: qc.sty_flax_fierce_jackal
   QC.Uni:
     repos:
       github.com/cyfronet-fid/eosc-search-service pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-champagne-coral.sh
-        container: qc.uni_shabby-orchid-olm
+        - /usr/bin/env sh .sqa/script.iris_articulate_pelican.sh
+        container: qc.uni_snow_carefree_penguin
   QC.Ver:
     repos:
       github.com/cyfronet-fid/eosc-search-service get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-magenta-mastiff.sh
-        container: qc.ver_thirsty-wheat-chinook
+        - /usr/bin/env sh .sqa/script.maroon_realistic_salamander.sh
+        container: qc.ver_fog_vibrant_chameleon
 timeout: 5400
