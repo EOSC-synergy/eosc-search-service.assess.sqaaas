@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/cyfronet-fid/eosc-search-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.strawberry_studious_gorilla.sh
-        container: qc.acc_taupe_wondrous_kirin
+        - /usr/bin/env sh .sqa/script.apricot_optimistic_walrus.sh
+        container: qc.acc_kiwi_vibrant_cockatoo
   QC.Doc:
     repos:
       github.com/cyfronet-fid/eosc-search-service find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gold_realistic_kiwi.sh
-        container: qc.doc_viridian_analytical_newt
+        - /usr/bin/env sh .sqa/script.coral_carefree_macaw.sh
+        container: qc.doc_clementine_responsible_salamander
       github.com/cyfronet-fid/eosc-search-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.isabelline_helpful_dugong.sh
-        container: qc.doc_cherry_understanding_kirin
+        - /usr/bin/env sh .sqa/script.slate_upbeat_goat.sh
+        container: qc.doc_mahogany_grateful_chameleon
       github.com/cyfronet-fid/eosc-search-service markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.orange_graceful_quokka.sh
-        container: qc.doc_sunset_sympathetic_hummingbird
+        - /usr/bin/env sh .sqa/script.aquamarine_amiable_echidna.sh
+        container: qc.doc_pine_cautious_llama
   QC.Lic:
     repos:
       github.com/cyfronet-fid/eosc-search-service licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.peony_agile_eel.sh
-        container: qc.lic_vermilion_meticulous_mandrill
+        - /usr/bin/env sh .sqa/script.rosewater_harmonious_toad.sh
+        container: qc.lic_pineapple_clever_peacock
   QC.Met:
     repos:
       github.com/cyfronet-fid/eosc-search-service cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.zinnia_content_wolverine.sh
-        container: qc.met_steel_shrewd_octopus
+        - /usr/bin/env sh .sqa/script.amethyst_warm_rattlesnake.sh
+        container: qc.met_celadon_perky_chimpanzee
   QC.Sec:
     repos:
       github.com/cyfronet-fid/eosc-search-service bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.pumpkin_persistent_beaver.sh
-        container: qc.sec_alabaster_rustic_tarantula
+        - /usr/bin/env sh .sqa/script.chestnut_honest_quoll.sh
+        container: qc.sec_amethyst_feisty_narwhal
   QC.Sty:
     repos:
       github.com/cyfronet-fid/eosc-search-service flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.nutmeg_peppy_albatross.sh
-        container: qc.sty_isabelline_nervous_buffalo
+        - /usr/bin/env sh .sqa/script.horizon_pensive_macaw.sh
+        container: qc.sty_ruby_compassionate_jellyfish
       github.com/cyfronet-fid/eosc-search-service hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.dusk_perky_orangutan.sh
-        container: qc.sty_burgundy_clever_starfish
+        - /usr/bin/env sh .sqa/script.claret_eager_seal.sh
+        container: qc.sty_grape_reserved_serval
       github.com/cyfronet-fid/eosc-search-service jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.peony_humble_tiger.sh
-        container: qc.sty_flax_fierce_jackal
+        - /usr/bin/env sh .sqa/script.fandango_mindful_elephant.sh
+        container: qc.sty_cosmos_wise_beaver
   QC.Uni:
     repos:
       github.com/cyfronet-fid/eosc-search-service pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.iris_articulate_pelican.sh
-        container: qc.uni_snow_carefree_penguin
+        - /usr/bin/env sh .sqa/script.indigo_lucky_osprey.sh
+        container: qc.uni_wisteria_understanding_hippopotamus
   QC.Ver:
     repos:
       github.com/cyfronet-fid/eosc-search-service get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.maroon_realistic_salamander.sh
-        container: qc.ver_fog_vibrant_chameleon
+        - /usr/bin/env sh .sqa/script.powder_intuitive_boar.sh
+        container: qc.ver_glacier_worried_caiman
 timeout: 5400
